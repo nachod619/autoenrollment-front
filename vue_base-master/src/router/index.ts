@@ -41,12 +41,21 @@ const routes: Array<RouteConfig> = [
     component: RoleMenu
   },
   {
+    path: '/signupalloxentric',
+    name: 'AlloxentricForm',
+    component: () => import('../views/AlloxentricForm.vue')
+  },
+  {
+    path: '/signupproveedor',
+    name: 'ProveedorForm',
+    component: () => import('../views/ProveedorForm.vue')
+  },
+  {
     path: '/signupagent',
     name: 'AgentForm',
     component: () => import('../views/AgentForm.vue')
   }
 ]
-
 
 const router = new VueRouter({
   mode: 'history',
